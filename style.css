@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
 
 :root {
-  --primary-color: #f3dd38;
-  --secondary-color: #473317;
+  --primary-color: #157ec2;
+  --secondary-color: #ffffff;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #fbe30c
 }
 
 .navigation {
@@ -29,9 +30,12 @@ body {
 }
 
 img {
-  display: block;
-  margin: 0 auto;
-  height: 40rem;
+    max-height: 50vh;
+    max-width: 50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
 }
 
 textarea {
@@ -69,27 +73,18 @@ button {
   border-radius: 1rem;
 }
 
-.footer {
-  margin-top: 1.5rem;
-  background-color: var(--primary-color);
-  padding: 1.5rem 0rem;
+.footer,
+i {
+  color: var(--secondary-color);
   text-align: center;
-  color: var(--secondary-color);
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  font-size: 2.8rem;
+  margin-top: 5vh;
+  margin-right: 0.6vw;
+  margin-left: 0.6vw;
 }
 
-.footer .link {
-  color: var(--secondary-color);
-}
-
-.footer ul {
-  padding-inline-start: 0px;
-}
-
-.footer .footer-header {
-  font-weight: bold;
-  font-size: x-large;
+.footer {
+    margin-bottom: 2vh;
 }
 
 .list-non-bullet {
@@ -110,4 +105,17 @@ button {
 
 .tbplaceholder {
   padding: 10px;
+}
+.github-repo {
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  padding: 1rem;
+}
+
+.github-repo-link {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1.4rem;
 }
